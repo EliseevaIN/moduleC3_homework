@@ -19,6 +19,7 @@ class ElectricalDevice {
         console.log(`${this.name} is disconnected.`)
     }
 }
+
 class Computer extends ElectricalDevice {
     constructor(name, brand, power, type) {
         super(name, brand, power);
@@ -26,6 +27,7 @@ class Computer extends ElectricalDevice {
         this.isConnected = false;
     }
 }
+
 class TV extends ElectricalDevice {
     constructor(name, brand, power, resolution, display) {
         super(name, brand, power);
@@ -47,6 +49,7 @@ class TV extends ElectricalDevice {
         console.log(`${this.name} is now off.`)
     }
 }
+
 class Refrigerator extends ElectricalDevice {
     constructor(name, brand, power, color, hasFreezer) {
         super(name, brand, power);
