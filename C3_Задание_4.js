@@ -69,6 +69,7 @@ TV.prototype.turnOff = function() {
     this.isOn = false;
     console.log(`${this.name} is now off.`)
 }
+
 function Refrigerator(name, brand, power, color, hasFreezer) {
     this.name = name;
     this.brand = brand;
