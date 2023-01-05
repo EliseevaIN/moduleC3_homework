@@ -10,10 +10,12 @@ class ElectricalDevice {
         this.power = power;
         this.isConnected = false;
     }
+
     connect() {
         this.isConnected = true;
         console.log(`${this.name} is connected.`)
     }
+
     disconnect() {
         this.isConnected = false;
         console.log(`${this.name} is disconnected.`)
@@ -36,6 +38,7 @@ class TV extends ElectricalDevice {
         this.isConnected = false;
         this.isOn = false;
     }
+
     turnOn() {
         if (this.isConnected) {
             this.isOn = true;
@@ -44,6 +47,7 @@ class TV extends ElectricalDevice {
             console.log("Before turning on you should plug the TV.")
         }
     }
+
     turnOff() {
         this.isOn = false;
         console.log(`${this.name} is now off.`)
@@ -58,10 +62,12 @@ class Refrigerator extends ElectricalDevice {
         this.isConnected = false;
         this.isLocked = false;
     }
+
     lock() {
         this.isLocked = true;
         console.log(`${this.name} is now locked.`);
     }
+
     unlock() {
         this.isLocked = false;
         console.log(`${this.name} is now unlocked.`);

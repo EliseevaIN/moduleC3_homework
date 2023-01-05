@@ -33,6 +33,7 @@ ElectricalDevice.prototype.disconnect = function() {
     this.isConnected = false;
     console.log(`${this.name} is disconnected.`)
 }
+
 function Computer(name, brand, power, type) {
     this.name = name;
     this.brand = brand;
@@ -42,6 +43,7 @@ function Computer(name, brand, power, type) {
 }
 
 Computer.prototype = new ElectricalDevice();
+
 function TV(name, brand, power, resolution, display) {
     this.name = name;
     this.brand = brand;
